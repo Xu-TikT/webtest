@@ -94,3 +94,5 @@ $RECYCLE.BIN/
 *.lnk
 
 .idea/fileTemplates/
+将删除 .idea/.name
+将删除 .idea/encodings.xml

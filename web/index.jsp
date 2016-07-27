@@ -13,9 +13,13 @@
 <body>
 <h1>Hello Servlet</h1>
 <hr>
-  <a href="webservlet/ServletTest">doGet方式</a>
+<a href="webservlet/ServletTest">doGet方式</a>
+
 <form action="webservlet/ServletTest" method="post">
     <input type="submit" value="doPost方式"/>
 </form>
+<h1>Servlet的生命周期</h1>
+<hr>
+<a href="webservlet/ServletLifeTest1">doGet方式测试ServletLifeTest1的生命周期</a>
 </body>
 </html>
