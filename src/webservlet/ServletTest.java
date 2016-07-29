@@ -19,13 +19,16 @@ public class ServletTest extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");//使其输出支持html标签
         PrintWriter out = response.getWriter();
         out.print("<strong>Hello I am Servlet Post</strong>");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("ServletTest收到doGet请求");
         //向网页发送
-        response.setContentType("text/html;charset=utf-8");//使其输出支持html标签,必须在PrintWriter对象创建之前
+//        response.setContentType("text/html;charset=utf-8");//使其输出支持html标签,必须在PrintWriter对象创建之前
+        response.setContentType("charset=utf-8");//使其输出支持html标签,必须在PrintWriter对象创建之前
         PrintWriter out = response.getWriter();
-        out.print("<strong>Hello I am Servlet Get</strong>");
+//        out.print("<strong>Hello I am Servlet Get</strong>");
+        out.print("{\"username\":\"I get your request\"}");
     }
 }
